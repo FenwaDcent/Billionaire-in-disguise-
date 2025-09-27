@@ -59,4 +59,19 @@
     -->
 </body>
 
-</html>
+</html> {
+  "build": {
+    "env": {
+      "GENERATE_SOURCEMAP": "false"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ]
+}
