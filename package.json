@@ -1,3 +1,20 @@
+
+{
+  "build": {
+    "env": {
+      "GENERATE_SOURCEMAP": "false"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ]
+}
 {
   "name": "fenwa-novel",
   "version": "1.0.0",
